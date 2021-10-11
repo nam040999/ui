@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+</head>
+
+<body>
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="row" id="row1">
+                    <div class="col">
+                        <ul class="top-bar__menu-list">
+                            <li><a href="#">
+                                    <h5>HOME</h5>
+                                </a></li>
+                            <li><a href="#">
+                                    <h5>ABOUT THE TESTS</h5>
+                                    <i class="fa fa-chevron-down"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#">
+                                                <h5>Page Markup And Formatting</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Clearing Floats</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Page with comments</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Page with comments disabled</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Lorem Ipsum</h5>
+                                            </a></li>
+                                    </ul>
+                                </a></li>
+                            <li><a href="#">
+                                    <h5>LEVEL 1</h5>
+                                    <i class="fa fa-chevron-down"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#">
+                                                <h5>Level 2</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Level 3</h5>
+                                            </a></li>
+                                    </ul>
+                                </a></li>
+                            <li><a href="#">
+                                    <h5>SHOP</h5>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="top-bar__search">
+                            <input type="text" placeholder="Search" />
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="row2">
+                    <div class="logo">
+                        <img src="./images/Logo.png" alt="anh logo">
+                        <h5>
+                            Just another colorlib.com site
+                        </h5>
+                    </div>
+                </div>
+        </section>
+    </header>
+
+    <content>
+        <section class="content">
+            <div class="row">
+                <ul class="slider">
+                    <li class="slider-item">
+                        <img class="slider__content" src="./images/img1.png" atl="anh1" />
+                        <div class="slider-template">
+                            <h1>TEMPLATE</h1>
+                            <p>____________</p>
+                            <h1>Template: Featured Image (Full Width No Sidebar Layout)
+                            </h1>
+                            <h4> | READ MORE |</h4>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <img class="slider__content" src="./images/img2.png" atl="anh1" />
+                        <div class="slider-template">
+                            <h1>TEMPLATE</h1>
+                            <p>____________</p>
+                            <h1>Template: Featured Image (No Sidebar Layout)
+                            </h1>
+                            <h4>| READ MORE |</h4>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <img class="slider__content" src="./images/img3.png" atl="anh1" />
+                        <div class="slider-template">
+                            <h1>TEMPLATE</h1>
+                            <p>____________</p>
+                            <h1>Template: Comments
+                            </h1>
+                            <h4>| READ MORE |</h4>
+                        </div>
+                    </li>
+                </ul>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("slider-item");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 4000);
+                    }
+                </script>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="row">
+                            <div class="hot-post1">
+                                <h4>POST FORMATS</h4>
+                                <p>________</p>
+                                <h1>Post Format: Standand</h1>
+                                <p>Posted on October 5,2016 by Aigars</p>
+                                <img src="./images/hotPost.png" alt="hotPost">
+                                <p>All children, except one, grow up. They soon know that they will grow up, and the
+                                    way Wendy knew was this.</p>
+                                <h3> | READ MORE |</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="hot-post2">
+                                <h4>POST FORMATS</h4>
+                                <p>________</p>
+                                <h1>Post Format: Gallery</h1>
+                                <p>Posted on November 12, 2015by Aigars</p>
+                                <img src="./images/hotPost2.png" alt="hotPost">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, sapien nec
+                                    aliquam viverra, libero elit euismod turpis, vel sollicitudin nisi eros eget tortor.
+                                </p>
+                                <h3> | READ MORE |</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="other-posts">
+                                <ul class="other-post__list">
+                                    <li>
+                                        <div class="other-post__item">
+                                            <h4>TEMPLATE</h4>
+                                            <p>________</p>
+                                            <h1>Template: Featured Image (No Sidebar Layout)</h1>
+                                            <p>Posted on November 11, 2015by Aigars</p>
+                                            <img src="./images/1.png" alt="hotPost">
+                                            <p>This post should display a featured image, if the theme supports it.
+                                                Non-square images can provide some unique styling issues. This post
+                                                tests a vertical featured image.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="other-post__item">
+                                            <h4>TEMPLATE</h4>
+                                            <p>________</p>
+                                            <h1>Template: Featured Image (Full Width No Sidebar Layout)
+                                            </h1>
+                                            <p>Posted on November 1, 2015by Aigars</p>
+                                            <img src="./images/2.png" alt="hotPost">
+                                            <p>This post should display a featured image, if the theme supports it.
+                                                Non-square images can provide some unique styling issues.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="other-post__item">
+                                            <h4>TEMPLATE</h4>
+                                            <p>________</p>
+                                            <h1>Template: More Tag</h1>
+                                            <p>Posted on November 1, 2015by Aigars
+                                            </p>
+                                            <img src="./images/3.png" alt="hotPost">
+                                            <p>This content is before the more tag. Right after this sentence should be
+                                                a “continue reading” button of some sort.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="other-post__item">
+                                            <h4>TEMPLATE</h4>
+                                            <p>________</p>
+                                            <h1>Template: Excerpt (Defined)</h1>
+                                            <p>Posted on October 15, 2015by Aigars
+                                            </p>
+                                            <img src="./images/4.png" alt="hotPost">
+                                            <p>This is a user-defined post excerpt. It should be displayed in place of
+                                                the post content in archive-index pages.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container-sub">
+                            <div class="row">
+                                <div class="about-me">
+                                    <h4>ABOUT ME</h2>
+                                        <p>________</p>
+                                        <img src="./images/Logo.png" />
+                                        <p>
+                                            My name is Activello and I am an awesome WordPress blog theme for
+                                            photography, food, travel and other blogs. I was created by colorlib.
+                                        </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="follow-me">
+                                    <h4>FOLLOW ME</h2>
+                                        <p>________</p>
+                                        <ul class="follow-me__list-icons">
+                                            <li><a href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <i class="fa fa-youtube"></i>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <i class="fa fa-github"></i>
+                                                </a></li>
+                                        </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="recent-posts">
+                                    <h4>RECENT POSTS</h2>
+                                        <p>________</p>
+                                        <ul class="recent-posts__lists">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="post-item">
+                                                        <img src="./images/item1.png" />
+                                                        <div class="item-detail">
+                                                            <h4> Post Format: Standand</h4>
+                                                            <p> - 05 Oct , 2016</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="post-item">
+                                                        <img src="./images/item2.png" />
+                                                        <div class="item-detail">
+                                                            <h4> Post Format: Gallery</h4>
+                                                            <p>- 12 Nov , 2015</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="post-item">
+                                                        <img src="./images/item3.png" />
+                                                        <div class="item-detail">
+                                                            <h4>Template: Featured Image (No Sidebar Layout)</h4>
+                                                            <p> - 11 Nov , 2015</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="content-search">
+                                    <input type="text" placeholder="Search..." />
+                                    <button type="button">SEARCH</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="categories">
+                                    <h4>CATEGORIES</h2>
+                                        <p>________</p>
+                                        <ul class="categories__list">
+                                            <li>
+                                                <div class="categories-item">
+                                                    <p>Post Formats</p>
+                                                    <p>11</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="categories-item">
+                                                    <p>Template</p>
+                                                    <p>5</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="categories-item">
+                                                    <p>Cat A</p>
+                                                    <p>3</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="categories-item">
+                                                    <p>Edge Case</p>
+                                                    <p>3</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="categories-item">
+                                                    <p>Cat B</p>
+                                                    <p>2</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <p style="color: gray; margin-top: 50px;">Any text goes here</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="theme" style="margin-top: 50px;">
+                                    <h style="color: gray;">THIS THEME IS ADSENSE READY</h3>
+                                        <p>________</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </content>
+
+</body>
+
+</html>

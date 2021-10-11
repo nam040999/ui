@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
