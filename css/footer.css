@@ -1,0 +1,33 @@
+.footer {
+    background-color: rgb(194, 194, 194);
+    margin-top: 50px;
+}
+
+.footer__list-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__list-info > h5 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.list-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.list-icons > li {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.list-icons > li > a {
+    text-decoration: none;
+    color: black;
+}

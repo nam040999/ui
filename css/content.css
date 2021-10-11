@@ -251,7 +251,6 @@
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .other-post__list > li {
@@ -262,4 +261,25 @@
 .other-post__list .other-post__item > img {
     height: 300px;
     width: 300px;
+}
+
+.other-post__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.other-post__item > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.other-post__item > p {
+    padding: 10px;
+    color: gray;
+}
+
+.other-post__item > h4 {
+    color: gray;
 }
